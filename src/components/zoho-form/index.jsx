@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import BreadcrumbTwo from "@/common/breadcrumbs/breadcrumb-2";
-import FooterFive from "@/layout/footers/footer-5";
-import HeaderSix from "@/layout/headers/header-6";
-import ZohoFormModal from "./ZohoFormModal"; // Import ZohoFormModal
+// import BreadcrumbTwo from "@/common/breadcrumbs/breadcrumb-2";
+// import FooterFive from "@/layout/footers/footer-5";
+// import HeaderSix from "@/layout/headers/header-6";
+import ZohoFormModal from "./zoho-form-modal"; // Import ZohoFormModal
 
-const Team = () => {
+const ZohoForm = () => {
   const [isModalOpen, setModalOpen] = useState(false); // Modal state
 
   // Function to open modal
@@ -19,7 +19,7 @@ const Team = () => {
 
   return (
     <>
-      <HeaderSix />
+      {/* <HeaderSix /> */}
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
@@ -34,4 +34,4 @@ const Team = () => {
   );
 };
 
-export default Team;
+export default ZohoForm;

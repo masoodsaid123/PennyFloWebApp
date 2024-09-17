@@ -10,7 +10,7 @@ import NavMenu from './nav-menu';
 import Image from 'next/image';
 
 
-import ZohoFormModal from '@/components/zoho-form/zohoFormModal';
+import ZohoFormModal from '@/components/zoho-form';
 
 import logo from "../../../public/assets/img/logo/pennyflo_logo_white_5.png";
 
