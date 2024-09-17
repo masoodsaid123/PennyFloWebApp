@@ -1,0 +1,72 @@
+[debug] [2024-09-15T04:27:07.036Z] ----------------------------------------------------------------------
+[debug] [2024-09-15T04:27:07.044Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\masood\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-09-15T04:27:07.045Z] CLI Version:   13.17.0
+[debug] [2024-09-15T04:27:07.045Z] Platform:      win32
+[debug] [2024-09-15T04:27:07.045Z] Node Version:  v20.9.0
+[debug] [2024-09-15T04:27:07.046Z] Time:          Sun Sep 15 2024 09:57:07 GMT+0530 (India Standard Time)
+[debug] [2024-09-15T04:27:07.046Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-09-15T04:27:07.105Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-09-15T04:27:07.105Z] > authorizing via signed-in user (pennyflofintech@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\masood\Desktop\projects\pennyflo\webpage\softec-react
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-09-15T04:27:14.090Z] Using project from CLI flag: pennyflowebapp
+[debug] [2024-09-15T04:27:14.092Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/pennyflowebapp [none]
+[debug] [2024-09-15T04:27:14.611Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/pennyflowebapp 200
+[debug] [2024-09-15T04:27:14.611Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/pennyflowebapp {"projectId":"pennyflowebapp","projectNumber":"322875279151","displayName":"PennyFloWebApp","name":"projects/pennyflowebapp","resources":{"hostingSite":"pennyflowebapp"},"state":"ACTIVE","etag":"1_68062b75-66bc-40bb-a9d4-6f1ae275b4a6"}
+[info] i  Using project pennyflowebapp (PennyFloWebApp) 
+[info] 
+=== Hosting Setup
+[debug] [2024-09-15T04:27:14.623Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/pennyflowebapp [none]
+[debug] [2024-09-15T04:27:14.966Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/pennyflowebapp 200
+[debug] [2024-09-15T04:27:14.966Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/pennyflowebapp {"projectId":"pennyflowebapp","projectNumber":"322875279151","displayName":"PennyFloWebApp","name":"projects/pennyflowebapp","resources":{"hostingSite":"pennyflowebapp"},"state":"ACTIVE","etag":"1_68062b75-66bc-40bb-a9d4-6f1ae275b4a6"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2024-09-15T04:27:43.525Z] ----------------------------------------------------------------------
+[debug] [2024-09-15T04:27:43.534Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\masood\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-09-15T04:27:43.534Z] CLI Version:   13.17.0
+[debug] [2024-09-15T04:27:43.534Z] Platform:      win32
+[debug] [2024-09-15T04:27:43.534Z] Node Version:  v20.9.0
+[debug] [2024-09-15T04:27:43.535Z] Time:          Sun Sep 15 2024 09:57:43 GMT+0530 (India Standard Time)
+[debug] [2024-09-15T04:27:43.535Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-09-15T04:27:43.591Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-09-15T04:27:43.591Z] > authorizing via signed-in user (pennyflofintech@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\masood\Desktop\projects\pennyflo\webpage\softec-react
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
