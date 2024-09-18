@@ -24,8 +24,9 @@ const ZohoForm = () => {
         <div id="smooth-content">
           <main>
             {/* <BreadcrumbTwo title={"Team Member"} innertitle={"Team Member"} /> */}
-            <button onClick={handleGetStartedClick}>Get Started</button>
+            {/* <button onClick={handleGetStartedClick}>Get Started</button> */}
             <ZohoFormModal isOpen={isModalOpen} onClose={handleCloseModal} />
+            
           </main>
           {/* <FooterFive style_contact={true} style_team={true} /> */}
         </div>
