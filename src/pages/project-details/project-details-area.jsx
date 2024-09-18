@@ -77,18 +77,32 @@ const ProjectDetailsArea = ({ project }) => {
                      <div className="col-xl-10 col-lg-10 ">
                         <div className="pd-details-wrapper">
                             {/* {project_details_data.map((item, i)  =>  */}
-                                <div className={`pd-details-${project.cls_1}`}>
+                                {/* <div className={`pd-details-${project.cls_1}`}>
                                     <h4 className="pd-details-title">{project.title_1}</h4>
                                     <p>{project.description}</p>
                                     <div className={`pd-details-${project.cls_2}`}>
-                                    <h4 className="pd-details-title">{project.title_2}</h4>
-                                    {project.feture_list && 
-                                        <ul>{project.feture_list?.map((list, i)  => 
-                                        <li key={i}>{list}</li>)} 
-                                        </ul> 
-                                    }
-                                    
-                                </div>                                
+                                       <h4 className="pd-details-title">{project.title_2}</h4>
+                                       {project.feture_list && 
+                                          <ul>{project.feture_list?.map((list, i)  => 
+                                          <li key={i}>{list}</li>)} 
+                                          </ul> 
+                                       }
+                                    </div> 
+                                                                   */}
+                                                                   <div className={`pd-details-${project?.cls_1}`}>
+                    <h4 className="pd-details-title">{project?.title_1}</h4>
+                    <p>{project?.description}</p>
+                    <div className={`pd-details-${project?.cls_2}`}>
+                      <h4 className="pd-details-title">{project?.title_2}</h4>
+                      {project?.feture_list && (
+                        <ul>
+                          {project.feture_list.map((list, i) => (
+                            <li key={i}>{list}</li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
+                  </div>
                             {/* )}  */}
                            {/* <div className="pd-details-solution">
                               <div className="pd-details-solution-img-box d-flex align-items-center">
@@ -113,7 +127,7 @@ const ProjectDetailsArea = ({ project }) => {
                                  </div>
                               </div>
                            </div> */}
-                        </div>
+                        {/* </div> */}
                      </div>
                   </div>
                </div>

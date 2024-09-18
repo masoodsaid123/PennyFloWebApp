@@ -44,6 +44,10 @@ import Link from 'next/link';
 
 
 const TeamDetailsArea = ({ member }) => {
+    // Safety checks for 'member' object and nested properties
+    if (!member) {
+      return <div>Member data not available.</div>;
+  }
     return (
         <>
             <div className="team-details-area pt-100 pb-100">
