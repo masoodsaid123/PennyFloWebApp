@@ -24,28 +24,34 @@ const project_details_data = [
             ],
             
         },
-
         {
             id: 2,
             cls_1: "info", 
-            title_1: "AP/AR Automation with Auto-reconciliation",
+            title_1: "Team Collaboration",
             // feture_list: false,
-            description: <>Make direct payments to vendor, contractor, or employee bank accounts using 
-            swiftly in couple of clicks. Schedule payments, make bulk payments, or set up 
-            recurring payments securely through Pennyflo. Let your team to initiate the 
-            payments and all you need to do is approve.</>,
+            description: <>As the company grows, direct cash management and team collaboration become 
+            both more complex and more important. Collaborate with your finance team and 
+            work in sync with each team member. Get full control over the cash at any stage 
+            of business. Let the team handle the operations and all you need is to ‘just 
+            approve/ reject’. </>,
             cls_2: "overview", 
             title_2: "Overview",
             feture_list: [
-                <>Work with your team - Collaborate seamlessly with your finance team and accountants, enabling 
-                easy management and coordination for efficient financial operations.</>,
-                <>Scheduled payments - Set up scheduled payments for timely and efficient financial transactions.</>,
-                <>Invoice automation with advanced OCR - Automate invoice processing using advanced OCR technology for accurate 
-                and efficient payments.</>,
+                <>Employee budgeting and custom dashboard: Track employee budgets and 
+                provide custom dashboard for each team member for effective financial 
+                planning.
+                </>,
+                <>Easy approval flows in case of overshooting: Implement easy approval 
+                flows for budget overshooting to maintain financial control.
+                </>,
+                <>Never lose the control over your cash: Stay in control of your cash flow and financial management at all times.</>,
+                <>Automate the approval workflows, authorize team members and track every expense at ease. Get more detailed insights with auto-categorization & reconciliation of expenses.</>
                 
             ],
             
         },
+
+        
         {
             id: 3,
             cls_1: "info", 
@@ -119,25 +125,20 @@ const project_details_data = [
         {
             id: 5,
             cls_1: "info", 
-            title_1: "Team Collaboration",
+            title_1: "AP/AR Automation with Auto-reconciliation",
             // feture_list: false,
-            description: <>As the company grows, direct cash management and team collaboration become 
-            both more complex and more important. Collaborate with your finance team and 
-            work in sync with each team member. Get full control over the cash at any stage 
-            of business. Let the team handle the operations and all you need is to ‘just 
-            approve/ reject’. </>,
+            description: <>Make direct payments to vendor, contractor, or employee bank accounts using 
+            swiftly in couple of clicks. Schedule payments, make bulk payments, or set up 
+            recurring payments securely through Pennyflo. Let your team to initiate the 
+            payments and all you need to do is approve.</>,
             cls_2: "overview", 
             title_2: "Overview",
             feture_list: [
-                <>Employee budgeting and custom dashboard: Track employee budgets and 
-                provide custom dashboard for each team member for effective financial 
-                planning.
-                </>,
-                <>Easy approval flows in case of overshooting: Implement easy approval 
-                flows for budget overshooting to maintain financial control.
-                </>,
-                <>Never lose the control over your cash: Stay in control of your cash flow and financial management at all times.</>,
-                <>Automate the approval workflows, authorize team members and track every expense at ease. Get more detailed insights with auto-categorization & reconciliation of expenses.</>
+                <>Work with your team - Collaborate seamlessly with your finance team and accountants, enabling 
+                easy management and coordination for efficient financial operations.</>,
+                <>Scheduled payments - Set up scheduled payments for timely and efficient financial transactions.</>,
+                <>Invoice automation with advanced OCR - Automate invoice processing using advanced OCR technology for accurate 
+                and efficient payments.</>,
                 
             ],
             

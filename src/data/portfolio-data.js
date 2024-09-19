@@ -36,7 +36,7 @@ const portfolio_data = [
         filter_id: ["all", "Design Work", "Branding", "Development", "Illusutration", "App Design" ],
     }, 
     {
-        id: 3,
+        id: 2,
         thumb_img: thumb_img_5,
         brand_logo: brand_logo_5, 
         // job_title: "Design Wok, Branding",
@@ -47,7 +47,7 @@ const portfolio_data = [
         filter_id: ["all", "Design Work", "Branding", "Development", "Illusutration", "App Design" ],
     },
     {
-        id: 4,
+        id: 3,
         thumb_img: thumb_img_3,
         brand_logo: brand_logo_3, 
         // job_title: "Branding, Illusutration",
@@ -58,7 +58,7 @@ const portfolio_data = [
         filter_id: ["all", "Design Work", "Branding", "Development", "Illusutration", "App Design" ],
     }, 
     {
-        id: 3,
+        id: 4,
         thumb_img: thumb_img_4,
         brand_logo: brand_logo_4, 
         // job_title: "Design Wok, Illusutration",
