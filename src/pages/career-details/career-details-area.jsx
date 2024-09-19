@@ -69,7 +69,16 @@ const CareerDetailsArea = ({ career }) => {
                                 </div>
                             </div>
                             <div className="col-xxl-12">
-                                <div className="career-details-social-box mb-20">
+                            {/* <Link href="https://www.linkedin.com/company/pennyflo/" passHref>
+                                <i className="fab fa-linkedin-in"></i>
+                            </Link>
+                            <Link href="https://twitter.com/PennyFlo_" passHref>
+                                <i className="fab fa-twitter"></i>
+                            </Link>
+                            <Link href="https://www.youtube.com/@PennyFlo" passHref>
+                                <i className="fab fa-youtube"></i>
+                            </Link> */}
+                                {/* <div className="career-details-social-box mb-20">
                                     <Link href="https://www.linkedin.com/company/pennyflo/" passHref>
                                         <a target="_blank" rel="noopener noreferrer" className="facebook">
                                             <i className="fab fa-linkedin-in"></i>
@@ -85,7 +94,7 @@ const CareerDetailsArea = ({ career }) => {
                                             <i className="fab fa-youtube"></i>
                                         </a>
                                     </Link>
-                                </div>
+                                </div> */}
                                 {/* <div className="career-details-bottom-text text-center">
                                     <Link href="/employee-at-pennyflo">Employee at Pennyflo?</Link>
                                 </div> */}

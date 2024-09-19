@@ -58,7 +58,7 @@ const TeamArea = ({bg_style}) => {
                         {bg_style ?
                            <div className="col-xl-6 col-lg-6 col-md-6">
                               <div className="tp-team-top-content text-center text-md-end">
-                                 <Link className="tp-btn-inner tp-btn-hover alt-color-orange" href="/team-details">
+                                 <Link className="tp-btn-inner tp-btn-hover alt-color-orange" href="/team">
                                     <span>View All</span>
                                     <b></b>
                                  </Link>
@@ -74,7 +74,7 @@ const TeamArea = ({bg_style}) => {
                      </div>
                   </div>
                   <div className="row">
-                    {team_data.slice(0, 4).map((item, i)  => 
+                    {team_data.slice(0, 3).map((item, i)  => 
                         <div key={i} 
                           className={`col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-50 
                                       tp-team-border-right tp-border-after-${item.cls} 
@@ -85,7 +85,7 @@ const TeamArea = ({bg_style}) => {
                                  <Image src={item.img} alt="theme-pure" />
                               </div>
                               <div className="tp-team-content">
-                                 <h4 className="tp-team-title-sm"><Link href="/team-details">{item.name}</Link></h4>
+                                 <h4 className="tp-team-title-sm"><Link href="/team">{item.name}</Link></h4>
                                  <span>{item.job_title}</span>
                               </div>
                               <div className="tp-team-social">
