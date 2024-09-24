@@ -5,10 +5,10 @@ import React from 'react';
 // img and icon import here 
 import bg_right_img from "../../../../public/assets/img/rank/rank-bg-shape.png" ;
 import top_img_1 from "../../../../public/assets/img/rank/rank-cup.png";
-import img_1 from "../../../../public/assets/img/rank/amazon.png";
-import img_2 from "../../../../public/assets/img/rank/ebay.png";
-import img_3 from "../../../../public/assets/img/rank/walmart.png";
-import img_4 from "../../../../public/assets/img/rank/shopify.png";
+import img_1 from "../../../../public/assets/img/rank/Accounts & ERPs.svg";
+import img_2 from "../../../../public/assets/img/rank/Invoice & Spend.svg";
+import img_3 from "../../../../public/assets/img/rank/Payments.svg";
+import img_4 from "../../../../public/assets/img/rank/File Storage.svg";
 // circle 
 import cirimg_1 from "../../../../public/assets/img/rank/sky-circle.png";
 import cirimg_2 from "../../../../public/assets/img/rank/yellow-circle.png";

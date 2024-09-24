@@ -159,7 +159,7 @@ const Footer = () => {
                            {footer_lisks.map((item, i)  => 
                              <div key={i} className={`${item.cls_1} col-md-6 pb-30 wow tpfadeUp`} data-wow-duration=".9s" data-wow-delay=".7s">
                              <div className={`tp-footer__widget footer-widget-3 ${item.cls_2}`}>
-                                 <h4 className="tp-footer__widget-title">{item.title}</h4>
+                                 <h4 className="tp-footer__widget-title" style={{ color: 'white' }}>{item.title}</h4>
                                  <div className="tp-footer__content">
                                      <ul>
                                          {item.links.map((link, i) => (
@@ -168,6 +168,7 @@ const Footer = () => {
                                                      href={link.link} 
                                                      target={link.target ? link.target : "_self"} 
                                                      rel={link.target === "_blank" ? "noopener noreferrer" : ""}
+                                                     style={{ color: 'white' }}
                                                  >
                                                      {link.name}
                                                  </Link>

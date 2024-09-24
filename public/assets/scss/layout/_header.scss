@@ -627,9 +627,10 @@
             margin-left: 0px; 
             color: var(--tp-common-white); 
             &:hover{
-                color: var(--tp-common-yellow-3);
+                // color: var(--tp-common-blue-4);
+                color: #600EE4;
                 & svg{
-                    color: var(--tp-common-yellow-3);
+                    color: var(--tp-common-blue-4);
                 }
             }
         }

@@ -68,8 +68,8 @@
 // export default OfficeLocation;
 
 import React from 'react';
-import img_1 from "../../../public/assets/img/contact/contact-icon-sm-5.png";
-import img_2 from "../../../public/assets/img/contact/contact-icon-sm-6.png";
+import img_1 from "../../../public/assets/img/contact/india_2.png";
+import img_2 from "../../../public/assets/img/contact/london_2.png";
 import Image from 'next/image';
 
 // office location data

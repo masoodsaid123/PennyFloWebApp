@@ -20,7 +20,7 @@ const Price = () => {
             <PriceArea />
             <PlanArea />
             <Brand />
-            <TestimonialArea />
+            {/* <TestimonialArea /> */}
             <FaqArea style_service={true}/>
              <CtaArea />
           </main>

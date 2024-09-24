@@ -10,6 +10,7 @@ import NavMenu from './nav-menu';
 import Image from 'next/image';
 
 
+
 import ZohoFormModal from '@/components/zoho-form';
 
 import logo from "../../../public/assets/img/logo/pennyflo_logo_white_5.png";
@@ -19,6 +20,7 @@ const Header = () => {
   const [searchOpen, setSearchOpen] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [hover, setHover] = useState(false);
 
   // GSAP animation
   let header_top_animation = useRef(null);
@@ -91,9 +93,12 @@ const Header = () => {
                     <Link className="d-none d-lg-inline-block header-bottom__action-2 border-none" 
                     // href="/sign-in" 
                     href="/#" 
-                    style={{ marginRight: '15px' }}>
+                    style={{ marginRight: '15px', color: hover ? '#600EE4' : 'black', display: 'flex', alignItems: 'center', }}
+                    onMouseEnter={() => setHover(true)}
+                    onMouseLeave={() => setHover(false)}
+                    >
                       <UserIcon />
-                      <span>Log In</span>
+                      <span  >Log In</span>
                     </Link>
                   </div>
                   <div className="header-bottom__btn d-flex align-items-center">
