@@ -55,7 +55,7 @@ const BreadcrumbTwo = ({ title, innertitle, team_details, career_details }) => {
                       <span className="dvdr">
                         <i className="fal fa-angle-right"></i>
                       </span>
-                      <span>Imdat Cimsit</span>
+                      {/* <span>Imdat Cimsit</span> */}
                     </>
                   )}
                   {career_details && (
