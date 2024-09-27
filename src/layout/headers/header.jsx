@@ -52,7 +52,7 @@ const Header = () => {
             <div className="row align-items-start">
               <div className="col-6">
                 <div className="header-top__link">
-                  <span>Offer <i>is going on till December’24, 70% OFF/ Month </i></span>
+                  <span>Offer <i>is going on till March’25, 75% OFF/ Month </i></span>
                   <Link href="/price">
                     <svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M1.40918 9L5.591 5L1.40918 1" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>

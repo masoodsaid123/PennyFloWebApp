@@ -32,7 +32,7 @@ const Portfolio = () => {
 const imgContainerStyle = {
   position: 'relative',
   width: '100%',
-  height: '200px', // Fixed height for the image container
+  height: '310px', // Fixed height for the image container
   overflow: 'hidden',
 };
 

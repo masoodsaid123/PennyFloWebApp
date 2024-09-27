@@ -8,7 +8,7 @@ import img from "../../../../public/assets/img/faq/faq-1.png"
 const faq_content = {
     sub_title: "Support",
     title: <>Frequently <br /> Asked Questions</>,
-    description: <>Sed ut perspiciatis unde omnis iste natus error <br /> sit voluptatem accusantium.!</>,
+    description: <></>,
     btn_text: "Get in Touch",
 }
 const {sub_title, title, description, btn_text }  = faq_content
@@ -34,7 +34,7 @@ const FaqArea = ({style_service}) => {
                                     {btn_text}
                               </Link>
                            </div>
-                           <div className="tp-faq-img" data-parallax='{"x": -50, "smoothness": 30}'>
+                           <div className="tp-faq-img" data-parallax='{"x": -50, "smoothness": 30}' >
                               <Image src={img} alt="" />
                            </div>
                         </div>
