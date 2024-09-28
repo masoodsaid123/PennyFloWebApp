@@ -1,6 +1,6 @@
 import React from "react";
 import SEO from "../common/seo";
-import ZohoForm from "../components/zoho-form";
+import ZohoForm from "../components/zoho-form/ZohoFormModal";
 import Wrapper from "../layout/wrapper";
 
 const index = () => {

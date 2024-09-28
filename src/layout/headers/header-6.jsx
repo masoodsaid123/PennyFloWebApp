@@ -7,7 +7,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import NavMenu from './nav-menu';
 import { gsap } from 'gsap';
 
-import ZohoFormModal from "@/components/zoho-form";
+import ZohoFormModal from "@/components/zoho-form/ZohoFormModal";
 import logo_black from "../../../public/assets/img/logo/pennyflo_logo_white_5.png";
 import logo_white from "../../../public/assets/img/logo/pennyflo_logo_white_4.png";
 

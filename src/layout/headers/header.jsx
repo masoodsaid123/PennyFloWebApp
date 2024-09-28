@@ -11,7 +11,7 @@ import Image from 'next/image';
 
 
 
-import ZohoFormModal from '@/components/zoho-form';
+import ZohoFormModal from '@/components/zoho-form/ZohoFormModal';
 
 import logo from "../../../public/assets/img/logo/pennyflo_logo_white_5.png";
 
