@@ -49,7 +49,7 @@ const Header = () => {
   const { sticky } = useSticky();
   const [searchOpen, setSearchOpen] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  // const [isModalOpen, setIsModalOpen] = useState(false);
   const [hover, setHover] = useState(false);
 
 
@@ -154,7 +154,7 @@ const Header = () => {
                   </div>
                   <div className="header-bottom__btn d-flex align-items-center">
                     <div className="tp-btn-white tp-btn-hover alt-color-black d-none d-md-inline-block"  >
-                      <span className="white-text" onClick={handleGetStartedClick} >Get Started</span>
+                      <span className="white-text" onClick={handleGetStartedClick} style={{ cursor: 'pointer' }} >Get Started</span>
                       <b></b>
                     </div>
                     <a className="header-bottom__bar tp-menu-bar d-lg-none" onClick={() => setSidebarOpen(true)}>
@@ -179,29 +179,47 @@ const Header = () => {
       )}
 
 <style jsx>{`
-        .popup-container {
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          background-color: rgba(0, 0, 0, 0.5);
-          z-index: 1000;
-        }
-        .popup-content {
-          background: white;
-          padding: 20px;
-          border-radius: 8px;
-          max-width: 500px;
-          width: 100%;
-        }
-        button {
-          padding: 10px;
-          cursor: pointer;
-        }
+       .popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 1000;
+  border: none; /* Remove any border from the container */
+  padding: 0; /* Ensure no space between container and content */
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 800px; /* Increase the maximum width of the popup */
+  width: 90%; /* Make the popup responsive, occupying 90% of the viewport */
+  border: 2px solid #4b4bff; /* Add a custom border color */
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+  box-sizing: border-box; /* Ensure padding is included in the width calculation */
+  margin: 0; /* Remove margin inside the content */
+}
+
+button {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #4b4bff; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Slightly round the button edges */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+button:hover {
+  background-color: #3a3aee; /* Darken the button on hover */
+}
+
       `}</style>
 
       {/* <ZohoFormModal isOpen={isModalOpen} onClose={closeModal} /> */}

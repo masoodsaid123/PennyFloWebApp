@@ -111,7 +111,7 @@ const [showPopup, setShowPopup] = useState(false);
                                           className={`${style_2 ? 'tp-btn-inner alt-color-orange' : 'tp-btn-white alt-color-black'} tp-btn-hover d-none d-md-inline-block`}
                                           onClick={handleGetStartedClick} // Open modal when clicked
                                        >
-                                          <span className="white-text">Get Started</span>
+                                          <span className="white-text" style={{ cursor: 'pointer' }}>Get Started</span>
                                           <b></b>
                                        </div>
                                        <a className="header-bottom__bar tp-menu-bar d-lg-none" onClick={() => setSidebarOpen(true)}>
