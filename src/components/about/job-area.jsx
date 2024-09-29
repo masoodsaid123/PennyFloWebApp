@@ -7,9 +7,9 @@ const job_data = {
     sub_title: "Current Positions",
     title: <>Join our Growing Team <br /> of Doers.</>,
     carrer_title: "Open Positions",
-    carrer_info: <> A 100% distributed team, you can work from anywhere. We are proud of a culture of 
-communication, collaboration, trust and kindness. <br/>
-    Et amet risus enim accumsan sit purus sit.</>,
+    carrer_info: <> A 100% distributed team, you can work from anywhere. We are proud of a  <br/>culture of 
+communication, collaboration, trust and kindness.
+    </>,
     job_info: [
         {
             id:1, 
