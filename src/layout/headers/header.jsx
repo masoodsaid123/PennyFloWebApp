@@ -11,9 +11,39 @@ import Image from 'next/image';
 
 
 
-import ZohoFormModal from '@/components/zoho-form/ZohoFormModal';
+// import ZohoFormModal from '@/components/zoho-form/ZohoFormModal';
 
 import logo from "../../../public/assets/img/logo/pennyflo_logo_white_5.png";
+
+
+
+
+const ZohoForm = () => {
+  useEffect(() => {
+    // Dynamically create iframe and append it to the div when component mounts
+    const d = document.getElementById("zf_div_2pdc-txxkTwQxbJ2ZEfbPBi8Tqi9Fz36iNYqj_y7n94");
+    const f = document.createElement("iframe");
+    f.src = 'https://forms.zohopublic.in/pennyflo/form/GetEarlyAccess1/formperma/2pdc-txxkTwQxbJ2ZEfbPBi8Tqi9Fz36iNYqj_y7n94?zf_rszfm=1';
+    f.style.border = "none";
+    f.style.height = "320px";
+    f.style.width = "90%";
+    f.style.transition = "all 0.5s ease";
+    f.setAttribute("aria-label", 'Get\x20Early\x20Access');
+    d.appendChild(f);
+
+    return () => {
+      // Clean up the iframe when component is unmounted
+      d.innerHTML = '';
+    };
+  }, []); // Empty dependency array ensures this runs only once when the form is loaded.
+
+  return (
+    <div id="zf_div_2pdc-txxkTwQxbJ2ZEfbPBi8Tqi9Fz36iNYqj_y7n94"></div>
+  );
+};
+
+
+
 
 const Header = () => {
   const { sticky } = useSticky();
@@ -21,6 +51,14 @@ const Header = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [hover, setHover] = useState(false);
+
+
+  // const [showPopup, setShowPopup] = useState(false);
+
+  const handlePopup = () => {
+    setShowPopup(!showPopup);
+  };
+
 
   // GSAP animation
   let header_top_animation = useRef(null);
@@ -38,8 +76,21 @@ const Header = () => {
     });
   }, []);
 
-  const openModal = () => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false);
+  // const openModal = () => setIsModalOpen(true);
+  // const closeModal = () => setIsModalOpen(false);
+
+
+  const [showPopup, setShowPopup] = useState(false);
+
+  // Function to handle popup visibility
+  const handleGetStartedClick = () => {
+    setShowPopup(true);
+  };
+
+  const handleClosePopup = () => {
+    setShowPopup(false);
+  };
+
 
   return (
     <>
@@ -103,7 +154,7 @@ const Header = () => {
                   </div>
                   <div className="header-bottom__btn d-flex align-items-center">
                     <div className="tp-btn-white tp-btn-hover alt-color-black d-none d-md-inline-block"  >
-                      <span className="white-text" onClick={openModal} >Get Started</span>
+                      <span className="white-text" onClick={handleGetStartedClick} >Get Started</span>
                       <b></b>
                     </div>
                     <a className="header-bottom__bar tp-menu-bar d-lg-none" onClick={() => setSidebarOpen(true)}>
@@ -117,7 +168,43 @@ const Header = () => {
         </div>
       </header>
 
-      <ZohoFormModal isOpen={isModalOpen} onClose={closeModal} />
+
+      {showPopup && (
+        <div className="popup-container">
+          <div className="popup-content">
+            <button onClick={handleClosePopup}>Close</button>
+            <ZohoForm />
+          </div>
+        </div>
+      )}
+
+<style jsx>{`
+        .popup-container {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: rgba(0, 0, 0, 0.5);
+          z-index: 1000;
+        }
+        .popup-content {
+          background: white;
+          padding: 20px;
+          border-radius: 8px;
+          max-width: 500px;
+          width: 100%;
+        }
+        button {
+          padding: 10px;
+          cursor: pointer;
+        }
+      `}</style>
+
+      {/* <ZohoFormModal isOpen={isModalOpen} onClose={closeModal} /> */}
 
       <SearchPopup searchOpen={searchOpen} setSearchOpen={setSearchOpen} />
       <Offcanvus sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />

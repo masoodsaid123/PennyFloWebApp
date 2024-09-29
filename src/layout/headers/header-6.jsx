@@ -7,15 +7,41 @@ import React, { useState, useRef, useEffect } from 'react';
 import NavMenu from './nav-menu';
 import { gsap } from 'gsap';
 
-import ZohoFormModal from "@/components/zoho-form/ZohoFormModal";
+// import ZohoFormModal from "@/components/zoho-form/ZohoFormModal";
 import logo_black from "../../../public/assets/img/logo/pennyflo_logo_white_5.png";
 import logo_white from "../../../public/assets/img/logo/pennyflo_logo_white_4.png";
 
 
+
+const ZohoForm = () => {
+   useEffect(() => {
+     // Dynamically create iframe and append it to the div when component mounts
+     const d = document.getElementById("zf_div_2pdc-txxkTwQxbJ2ZEfbPBi8Tqi9Fz36iNYqj_y7n94");
+     const f = document.createElement("iframe");
+     f.src = 'https://forms.zohopublic.in/pennyflo/form/GetEarlyAccess1/formperma/2pdc-txxkTwQxbJ2ZEfbPBi8Tqi9Fz36iNYqj_y7n94?zf_rszfm=1';
+     f.style.border = "none";
+     f.style.height = "320px";
+     f.style.width = "90%";
+     f.style.transition = "all 0.5s ease";
+     f.setAttribute("aria-label", 'Get\x20Early\x20Access');
+     d.appendChild(f);
+ 
+     return () => {
+       // Clean up the iframe when component is unmounted
+       d.innerHTML = '';
+     };
+   }, []); // Empty dependency array ensures this runs only once when the form is loaded.
+ 
+   return (
+     <div id="zf_div_2pdc-txxkTwQxbJ2ZEfbPBi8Tqi9Fz36iNYqj_y7n94"></div>
+   );
+ };
+ 
+
 const HeaderSix = ({ style_2 = false }) => {
    const { sticky } = useSticky()
    const [sidebarOpen, setSidebarOpen] = useState(false)
-   const [isModalOpen, setIsModalOpen] = useState(false);
+   // const [isModalOpen, setIsModalOpen] = useState(false);
 
    // GSAP animation
   let header_top_animation = useRef(null);
@@ -33,8 +59,18 @@ const HeaderSix = ({ style_2 = false }) => {
     });
   }, []);
 
-  const openModal = () => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false);
+//   const openModal = () => setIsModalOpen(true);
+//   const closeModal = () => setIsModalOpen(false);
+
+const [showPopup, setShowPopup] = useState(false);
+
+  const handleGetStartedClick = () => {
+    setShowPopup(true);
+  };
+
+  const handleClosePopup = () => {
+    setShowPopup(false);
+  };
 
    return (
       <>
@@ -73,7 +109,7 @@ const HeaderSix = ({ style_2 = false }) => {
                            <div className="header-bottom__btn d-flex align-items-center">
                                        <div
                                           className={`${style_2 ? 'tp-btn-inner alt-color-orange' : 'tp-btn-white alt-color-black'} tp-btn-hover d-none d-md-inline-block`}
-                                          onClick={openModal} // Open modal when clicked
+                                          onClick={handleGetStartedClick} // Open modal when clicked
                                        >
                                           <span className="white-text">Get Started</span>
                                           <b></b>
@@ -98,7 +134,43 @@ const HeaderSix = ({ style_2 = false }) => {
                </div>
             </div>
          </header>
-         <ZohoFormModal isOpen={isModalOpen} onClose={closeModal} />
+         {/* <ZohoFormModal isOpen={isModalOpen} onClose={closeModal} /> */}
+
+         {showPopup && (
+        <div className="popup-container">
+          <div className="popup-content">
+            <button onClick={handleClosePopup}>Close</button>
+            <ZohoForm />
+          </div>
+        </div>
+      )}
+
+<style jsx>{`
+        .popup-container {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: rgba(0, 0, 0, 0.5);
+          z-index: 1000;
+        }
+        .popup-content {
+          background: white;
+          padding: 20px;
+          border-radius: 8px;
+          max-width: 500px;
+          width: 100%;
+        }
+        button {
+          padding: 10px;
+          cursor: pointer;
+        }
+      `}</style>
+      
          <Offcanvus sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
 
       </>
