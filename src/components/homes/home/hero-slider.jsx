@@ -10,10 +10,10 @@ import shape_1 from "../../../../public/assets/img/hero/hero-line-shape.png";
 import shape_2 from "../../../../public/assets/img/hero/hero-line-shape-2.png";
 import shape_img_1 from "../../../../public/assets/img/hero/hero-shape-1.png";
 import shape_img_2 from "../../../../public/assets/img/hero/hero-shape-2.png";
-import hero_thumb_1 from "../../../../public/assets/img/hero/hero-sm-2.1.jpg";
+import hero_thumb_1 from "../../../../public/assets/img/hero/hero-page-graph-photo.svg";
 import thumb_1 from "../../../../public/assets/img/hero/hero-sm-3.png";
-import thumb_2 from "../../../../public/assets/img/hero/hero-sm-2.4.jpg";
-import hero_thumb_2 from "../../../../public/assets/img/hero/hero-sm-2.2.jpg";
+import thumb_2 from "../../../../public/assets/img/hero/hero-page-piegraph.svg";
+import hero_thumb_2 from "../../../../public/assets/img/hero/hero-page-bargraph.svg";
 import HeroForm from "@/forms/hero-form";
 import LineShape from "@/svg/line-shape";
 
