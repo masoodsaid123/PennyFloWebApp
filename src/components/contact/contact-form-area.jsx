@@ -32,10 +32,10 @@ const ContactFormArea = () => {
                            </div>
                            <div className="contact-form-social-box p-relative">
                               <div className="contact-form-social-item">
-                                 <Link href="#"><i className="fab fa-facebook-f"></i></Link>
-                                 <Link href="#"><i className="fab fa-twitter"></i></Link>
-                                 <Link href="#"><i className="fab fa-linkedin-in"></i></Link>
-                                 <Link href="#"><i className="fab fa-instagram"></i></Link>
+                              <Link href="https://www.linkedin.com/company/pennyflo/"><i className="fab fa-linkedin-in"></i></Link>
+                                 <Link href="https://www.youtube.com/@PennyFlo"><i className="fab fa-youtube"></i></Link>
+                                 <Link href="https://twitter.com/PennyFlo_"><i className="fab fa-twitter"></i></Link>
+                                 {/* <Link href="#"><i className="fab fa-instagram"></i></Link> */}
                               </div>
                               <div className="contact-form-section-img">
                                  <Image src={img} alt="theme-pure" />

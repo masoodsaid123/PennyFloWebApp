@@ -49,7 +49,7 @@ const menu_data = [
       { link: "/project", title: "Products" },
       // { link: "/project-details", title: "Project Details" }, 
       { link: "/price", title: "Pricing" },
-      { link: "/integrations", title: "Integrations" },
+      // { link: "/integrations", title: "Integrations" },
     ],
   },
 
