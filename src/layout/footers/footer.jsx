@@ -42,7 +42,7 @@ const footer_content  = {
                {name: "Products", link: "/project"},
                {name: "Pricing", link: "/price"},
                {name: "Careers", link: "/career"},
-               {name: "Blog", link: "/blog"},
+               {name: "Blog", link: "/#"},
                {name: "Contact", link: "/contact"},
             ]
         },
