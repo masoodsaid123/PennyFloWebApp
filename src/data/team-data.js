@@ -25,10 +25,10 @@ const team_data = [
         id: 2, 
         cls: 2,
         img: team_img_2,
-        name: "Satish Verma",
+        name: "Ashwin Thinnappan",
         job_title:  "Co-founder & CTO",
         socials:{
-            linkedin:"https://www.linkedin.com/in/satishverma110394/",
+            linkedin:"https://www.linkedin.com/in/sjashwin/",
             twitter:"https://www.x.com"
         }
     },
@@ -39,7 +39,7 @@ const team_data = [
         name: "Vaishnav Raj",
         job_title:  "Co-founder & COO",
         socials:{
-            linkedin:"https://www.linkedin.com/in/karthik-sreedharan-57662a18/",
+            linkedin:"https://www.linkedin.com/in/vaishnavraj/",
             twitter:"https://www.x.com"
         }
     },
@@ -62,21 +62,21 @@ const team_data = [
         name: "Fathimathul Rasha",
         job_title:  "Junior Software Engineer",
         socials:{
-            linkedin:"https://www.linkedin.com/in/karthik-sreedharan-57662a18/",
+            linkedin:"https://www.linkedin.com/in/fathimathul-rasha/",
             twitter:"https://www.x.com"
         }
     },
-    {
-        id: 6, 
-        cls: 2,
-        img: team_img_6,
-        name: "Anujendhra Singh",
-        job_title:  "Junior Backend Engineer",
-        socials:{
-            linkedin:"https://www.linkedin.com/in/karthik-sreedharan-57662a18/",
-            twitter:"https://www.x.com"
-        }
-    },
+    // {
+    //     id: 6, 
+    //     cls: 2,
+    //     img: team_img_6,
+    //     name: "Anujendhra Singh",
+    //     job_title:  "Junior Backend Engineer",
+    //     socials:{
+    //         linkedin:"https://www.linkedin.com/in/karthik-sreedharan-57662a18/",
+    //         twitter:"https://www.x.com"
+    //     }
+    // },
     {
         id: 7, 
         cls: 3,
@@ -84,7 +84,7 @@ const team_data = [
         name: "Masood Said",
         job_title:  "UI UX Engineer",
         socials:{
-            linkedin:"https://www.linkedin.com/in/karthik-sreedharan-57662a18/",
+            linkedin:"https://www.linkedin.com/in/-masoodsaid/",
             twitter:"https://www.x.com"
         }
     },
