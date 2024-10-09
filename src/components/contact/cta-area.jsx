@@ -17,8 +17,8 @@ const ZohoForm = () => {
      const f = document.createElement("iframe");
      f.src = 'https://forms.zohopublic.in/pennyflo/form/GetEarlyAccess1/formperma/2pdc-txxkTwQxbJ2ZEfbPBi8Tqi9Fz36iNYqj_y7n94?zf_rszfm=1';
      f.style.border = "none";
-     f.style.height = "320px";
-     f.style.width = "90%";
+    f.style.height = "350px";
+    f.style.width = "450%";
      f.style.transition = "all 0.5s ease";
      f.setAttribute("aria-label", 'Get\x20Early\x20Access');
      d.appendChild(f);
@@ -30,7 +30,23 @@ const ZohoForm = () => {
    }, []); // Empty dependency array ensures this runs only once when the form is loaded.
  
    return (
-     <div id="zf_div_2pdc-txxkTwQxbJ2ZEfbPBi8Tqi9Fz36iNYqj_y7n94"></div>
+     <div id="zf_div_2pdc-txxkTwQxbJ2ZEfbPBi8Tqi9Fz36iNYqj_y7n94" 
+       style={{
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    background: '#fff',
+    padding: '5px',
+    paddingTop: '5px',
+    borderRadius: '10px',
+    maxWidth: '600px',
+    width: '90%',
+    boxShadow: '0px 5px 20px rgba(0, 0, 0, 0.15)',
+    margin: '0 auto',
+    position: 'relative',  // Allow positioning of close button
+    transition: 'all 0.5s ease',
+  }}
+     ></div>
    );
  };
 
@@ -78,11 +94,11 @@ const CtaArea = () => {
                </div>
             </div>
             {showPopup && (
-        <div className="popup-container">
-          <div className="popup-content">
-            <button onClick={handleClosePopup}>Close</button>
+        <div className="popup-container" onClick={handleClosePopup}>
+          {/* <div className="popup-content">
+            <button onClick={handleClosePopup}>Close</button> */}
             <ZohoForm />
-          </div>
+          {/* </div> */}
         </div>
       )}
 
