@@ -33,9 +33,9 @@ const team_full_data = [
     },
       {
         id: 2,
-        name: "Satish Verma",
+        name: "Ashwin Thinnappan",
       img: "/assets/img/team/satish_verma_img.png",
-      location: "Bangkok City, Thailand",
+      location: "Coimbatore, Tamil Nadu, India",
       feature_list: [
           <>Cras sed felis eget velit aliquet. Morbi quis commodo odio</>,
           <>Pharetra vel turpis nunc eget lorem dolor. Quam vulputate <br />dignissim</>,
@@ -46,21 +46,17 @@ const team_full_data = [
           {id: 2, title: "Experience:", info: "7 years"},
       ],
       skill_title: "Superpower Skills:",
-      details_skill: ["JavaScript", "Backend", "Java", "Fintech"],
+      details_skill: ["System Architecture & API Development", "Full-Stack ", "Database Management", "Fintech","Cross-Platform Frameworks"],
       socials:{
-        linkedin:"https://www.linkedin.com/in/satishverma110394/",
+        linkedin:"https://www.linkedin.com/in/sjashwin/",
         twitter:"https://www.x.com"
       },
       about_title: "About Satish Verma",
-      about_info_1: <>Satish Verma (CTO) is a tech wizard with over 7+ years of expertise completely on
-      fintech’s. He worked with prominent HDFC (FinOne), Morgan Stanley, and Goldman
-      Sachs as backend and full-stack developer and later migrated to Agoda (Finance) as
-      the senior software engineer. He is currently serving notice period on Agoda and
-      joined hands with Karthik & Vaishnav as the CTO of PENNYFLO. He is highly skilled in 
-      Java, Scala Spring boot & Micro services, web services (SOAP and REST), Hadoop, 
-      Spark, AWS, SQL, PLSQL, Oracle, Sybase, MySQL Database, BPMN-Flowable, 
-      Kubernetes, HTML, CSS, JavaScript, Bootstrap, React, SDLC along with first-hand
-      experience of developing lending solutions end to end.</>,
+      about_info_1: <>Ashwin Thinnappan is a seasoned technology leader with over 8 years of experience 
+      in software engineering and system architecture. He has worked at top-tier companies like Apple, Tesla, and Codseg, where
+       he specialized in performance optimization, developing tools and frameworks for platforms like iOS, macOS, and
+        distributed systems. Ashwin's expertise spans cloud infrastructure, microservices, and large-scale
+         software development, making him a key player in driving technical excellence.</>,
       },
       {
         id:3,
