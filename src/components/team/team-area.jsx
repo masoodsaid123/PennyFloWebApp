@@ -68,7 +68,9 @@ const TeamArea = () => {
                     <span>{item.job_title}</span>
                   </div>
                   <div className="tp-team-social">
-                    <SocialLinksTwo />
+                    {/* <SocialLinksTwo /> */}
+                    <a href={item.socials.twitter} target='_blank'><i className="fab fa-twitter"></i></a>
+                    <a href={item.socials.linkedin} target='_blank'><i className="fab fa-linkedin-in"></i></a>
                   </div>
                 </div>
               </div>

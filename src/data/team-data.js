@@ -8,6 +8,9 @@ import team_img_6 from  "../../public/assets/img/team/anujendra_singh_img.png"
 import team_img_7 from  "../../public/assets/img/team/masood_said_img.png"
 // import team_img_8 from  "../../public/assets/img/team/team-4-8.png"
 
+import Link from "next/link";
+
+
 const team_data = [
     // for home 04
     {

@@ -1,4 +1,4 @@
-import Link from "next/link";
+  import Link from "next/link";
 
 
 const social_links = [
@@ -98,7 +98,7 @@ const social_links_two = [
  
 ];
 
-export const  SocialLinksTwo = ()  => {
+export const    SocialLinksTwo = ()  => {
    return (
      <>
         {social_links_two.map((link, i) => (
