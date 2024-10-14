@@ -9,7 +9,7 @@ import LocationIcon from '@/svg/location-icon';
 import PhoneIcon from '@/svg/phone-icon';
 import RightArrow from '@/svg/right-arrow';
 
-import footer_logo from "../../../public/assets/img/logo/pennyflo_logo_white_5.png";
+import footer_logo from "../../../public/assets/img/logo/pennyflo_logo_footer.png";
 import Image from 'next/image';
 
 
