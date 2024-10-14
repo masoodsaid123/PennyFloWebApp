@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useRef } from 'react';
 
-import img from "../../../../public/assets/img/service/sv-dashbord.png" 
+import img from "../../../../public/assets/img/service/dashboard.png" 
 
 const service_content = {
     title: "Explore our offerings",
