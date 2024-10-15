@@ -51,7 +51,7 @@ const team_full_data = [
         linkedin:"https://www.linkedin.com/in/sjashwin/",
         twitter:"https://www.x.com"
       },
-      about_title: "About Satish Verma",
+      about_title: "About Ashwin Thinnappan",
       about_info_1: <>Ashwin Thinnappan is a seasoned technology leader with over 8 years of experience 
       in software engineering and system architecture. He has worked at top-tier companies like Apple, Tesla, and Codseg, where
        he specialized in performance optimization, developing tools and frameworks for platforms like iOS, macOS, and
